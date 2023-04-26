@@ -16,7 +16,7 @@ app.use(express.json())
 app.use(cors())
 
 app.get("/", (req,res)=>{
-    res.json("Hey, this is backend!")
+    res.json("Hey, this is backend!")  
 })
 
 app.get("/orders", (req,res)=>{
@@ -372,7 +372,7 @@ app.delete("/deleteOrder/:orderId/:customerId/:productId",async (req,res)=>{
     })
 
 
-app.listen(8800, ()=>{
-    console.log("Connected to backend!")
+app.listen(process.env.PORT | PORT, () => {
+    console.log(`Server running on port ${PORT}`)
 })
 
