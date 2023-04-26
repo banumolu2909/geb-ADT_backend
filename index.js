@@ -372,7 +372,7 @@ app.delete("/deleteOrder/:orderId/:customerId/:productId",async (req,res)=>{
     })
 
 
-app.listen(process.env.PORT | PORT, () => {
+app.listen(process.env.PORT || PORT, () => {
     console.log(`Server running on port ${PORT}`)
 })
 
