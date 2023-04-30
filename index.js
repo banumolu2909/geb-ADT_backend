@@ -8,7 +8,7 @@ const db = mysql.createConnection({
     host:"us-cdbr-east-06.cleardb.net",
     user:"b9c287e7a8ccfe",
     password:"1f363232",
-    database:"ADT_Fianlproject"
+    database:"heroku_0212098b0c47838"
 })
 
 app.use(express.json())
