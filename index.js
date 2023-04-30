@@ -370,7 +370,7 @@ app.delete("/deleteOrder/:orderId/:customerId/:productId",async (req,res)=>{
     })
 
 
-app.listen(process.env.PORT || PORT, () => {
-    console.log(`Server running on port ${PORT}`)
+app.listen(8800, ()=>{
+    console.log("Connected to backend!")
 })
 
